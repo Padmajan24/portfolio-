@@ -1,0 +1,249 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poor Story', system-ui;   
+}
+#container{
+    width: 100%;
+    /* position: relative;  */
+    height: 100vh;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    font-size: 20px;
+}
+.logo{
+    width: 180px;
+}
+.listitems{
+    display: inline;
+    list-style: none;
+    margin: 0px 50px;
+}
+.links{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+/* css psuedo class
+selector : pseudo-class{
+    property:value;
+ }
+  */
+.links:hover {
+    color: crimson;
+    text-decoration: underline;
+}
+.home-contents{
+    margin: 13% 0px 0px 8%;
+}
+#username{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#Iname{
+    color: orange;
+    font-size: 50px;
+}
+#userdetails{
+    line-height: 20px;
+    font-size: 25px;
+}
+#download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: 800;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 5px; 
+}
+.home-images{
+    width: 45%;
+    height: 75%;
+    position: absolute;
+    right: 65px;
+    bottom: 0px;
+}
+.group1{
+    height: 100%;
+    position:absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 2s,left 1s;
+}
+.home-images:hover #shape{
+    bottom: 70px;
+}
+.home-images:hover #girl{
+    left:40%;
+}
+#about{
+    margin: 15% 8% 0px 8%;
+}
+.section-head{
+    text-align: center;
+    margin-top: 50px;
+}
+.mainHead{
+    font-size: 50px;
+}
+.subHead{
+    font-size: 30px;
+    color: blueviolet;
+}
+.about-body{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+.about-img>img{
+    width: 95%;
+    border-radius: 15px;
+}
+.about-contents{
+    font-size: 25px;
+    text-align: justify;
+}
+.informations{
+    margin-top: 1rem;
+}
+.info-box{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.info-box>span{
+    margin-left: 1rem;
+}
+#skill{
+    margin: 8% 8% 0px 8%;
+}
+.skill-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 20px;
+    align-items: center;
+}
+.myskill{
+    width: 100%;
+    border-radius: 20px;
+}
+.bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10px;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.bar-head,.bar-percent{
+    font-weight: 500;
+    font-size: 2rem;
+}
+.base-bar{
+    width: 100%;
+    height:1rem;
+    background-color: black;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 0px;
+}
+.html-bar{
+    width: 90%;
+    background-color: orange;
+}
+.css-bar{
+    width: 85%;
+    background-color: orange;
+}
+.js-bar{
+    width: 83%;
+    background-color: orange;
+}
+.react-bar{
+    width: 81%;
+    background-color: orange;
+}
+#contact{
+    margin: 8%;
+}
+.icon-collection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;    
+}
+.icon{
+    width: 70px;
+    height: 70px;
+    /* border: solid 1px; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,green,blue,white,orange,red,purple);
+}
+.brand{
+    color: black;
+    font-size: 40px;
+}
+.icon:hover .brand{
+    color: white;
+    animation: rotate 2s;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+}
+#copyright{
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+}
+.up-arrow{
+    float: right;
+    margin: -60px 30px 30px 30px;
+}
+html{
+    scroll-behavior: smooth;
+}
+ ::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+ }
+::-webkit-scrollbar-track{
+    background-color: azure;
+}
+::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius:10px ;
+}
+
